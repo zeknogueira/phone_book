@@ -8,9 +8,7 @@ if ($_POST["id_editar"] != "") {
     $data_nascimento = $_POST["data_nascimento"];
     $sql_query = "update from tbamigos set nome = '$nome', email = '$email', datanasc = '$data_nascimento', tel = '$telefone' where cod = '$id'";
     $select = mysqli_query($conexao_banco, $sql_query);
-    if(mysql_affected_rows() > 0){
-        echo "DEU CERTO";
-    };
+    
     
     header("Location: tela_amigos.php");
 
