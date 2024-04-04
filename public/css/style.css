@@ -1,0 +1,145 @@
+/* GERAL */
+/* Paleta de Cores */
+:root{
+
+    --color_0: #fff;
+    --color_1: #0FC2C0;
+    --color_2: #0CABA8;
+    --color_3: #008F8C;
+    --color_4: #015958;
+    --color_5: #023535;
+    --color_1_0: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+}
+
+.header_padrao {
+    background-color: var(--color_4);
+    height: 100vh;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px 1px rgba(61, 61, 61, 0.375);
+
+}
+
+.header_elements_box {
+    height: 80vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header_nav_box {
+    height: 70%;
+    width: 100%;
+    background-color: transparent;
+
+}
+
+.header_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.header_nav_elements_link {
+    color: var(--color_5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+
+.header_nav_element_box {
+    display: flex;
+    height: 25%;
+    width: 100%;
+    background-color: var(--color_1);
+    border-radius: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px 1px rgba(61, 61, 61, 0.479);
+}
+
+.header_nav_element_text {
+    color: var(--color_5);
+
+}
+
+/* MAIN */
+main {
+    height: 100vh;
+    width: 90vw;
+
+
+}
+
+.main_box {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.main_table_box{
+ height: 100%;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: start;
+}
+
+.main_table{
+    width: 100%;
+
+}
+
+
+.main_table_thead{
+
+}
+
+.main_table_tbody{
+    text-align: center;
+}
+
+.main_table_tbody_tr{
+    height: 30px;
+}
+
+footer {}
