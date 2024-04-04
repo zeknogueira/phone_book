@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php header("Location: tela_amigos.php"); ?>
+<!--<?php // header("Location: tela_amigos.php"); ?>-->
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">

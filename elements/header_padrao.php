@@ -4,21 +4,21 @@
             <nav class="header_nav">
 
                 <div class="header_nav_element_box">
-                    <a href="tela_usuarios" class="header_nav_elements_link">
+                    <a href="tela_usuarios.php" class="header_nav_elements_link">
                         <p class="header_nav_element_texto">Usuários</p>
                     </a>
                 </div>
 
 
                 <div class="header_nav_element_box">
-                    <a href="tela_comercios" class="header_nav_elements_link">
+                    <a href="tela_comercios.php" class="header_nav_elements_link">
                         <p class="header_nav_element_texto">Comercios</p>
                     </a>
                 </div>
 
 
                 <div class="header_nav_element_box">
-                    <a href="tela_amigos" class="header_nav_elements_link">
+                    <a href="tela_amigos.php" class="header_nav_elements_link">
                         <p class="header_nav_element_texto">Amigos</p>
                     </a>
                 </div>
