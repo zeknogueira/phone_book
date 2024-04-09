@@ -16,7 +16,7 @@
     </header>
     <main>
         <a href="inserir_comercio.php">Inserir Comércio</a>
-        <form action="selecionar_comercio.php" method="POST">
+        <form action="selecionar_comercio_processo.php" method="POST">
             <label for="nome">
                 <input type="text" name="nome" id="nome">
             </label>
