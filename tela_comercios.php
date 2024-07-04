@@ -9,8 +9,8 @@
 </head>
 
 <body>
-                    
-    <?php session_start();?>
+
+    <?php session_start(); ?>
     <header>
         <?php include "elements/header_padrao.php" ?>
     </header>
@@ -29,12 +29,13 @@
                 <th>Empresa</th>
                 <th>Telefone</th>
                 <th>Email</th>
+                <th>teste</th>
             </thead>
             <tbody>
                 <?php
                 require "factory/conexao.php";
                 if (isset($_SESSION["nome_comercio_busca"])) { // gambiarra
-                    
+                
                     $nome_buscado = $_SESSION["nome_comercio_busca"];
                     $sql_query = "select * from tbcomercio where contato ='$nome_buscado'";
                     unset($_SESSION["nome_comercio_busca"]);
@@ -57,6 +58,21 @@
                                 </td>
                                 <td>
                                     <?php echo $select_result["email"]; ?>
+                                </td>
+                                <td>
+                                    <p>trsteee</p>
+                                    <form action="editar_comercio.php" method="GET">
+                                        <input type="hidden" name="botao_editar" value="<?php echo $select_result["cod"]; ?>">
+                                        <input type="submit" name="botao_editar_enviar" value="EDITAR" class="main_table_button"
+                                            class="main_table_tbody_edit_button">
+                                    </form>
+                                </td>
+                                <td>
+                                    <form action="excluir_comercio_processo.php" method="POST">
+                                        <input type="hidden" name="id_botao_deletar" value="<?php echo $select_result["cod"]; ?>">
+                                        <input type="submit" name="botao_deletar" value="EXCLUIR" class="main_table_button"
+                                            class="main_table_tbody_delete_button">
+                                    </form>
                                 </td>
                             </tr>
                         <?php }

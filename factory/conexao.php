@@ -1,6 +1,6 @@
 <?php 
 $servidor = "localhost";
-$banco = "bdagendatb";
+$banco = "phone_book";
 $senha = "";
 $usuario = "root";
 
