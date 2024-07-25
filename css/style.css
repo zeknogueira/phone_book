@@ -1,6 +1,6 @@
 /* GERAL */
 /* Paleta de Cores */
-:root{
+:root {
 
     --color_0: #fff;
     --color_1: #0FC2C0;
@@ -11,6 +11,10 @@
     --color_1_0: #000;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +22,7 @@
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -26,7 +31,17 @@ body {
     justify-content: center;
 }
 
+.button_input_standart{
+    border: none;            /* Remove a borda */
+    font: inherit;           /* Herda as propriedades de fonte do elemento pai */
+    cursor: pointer;         /* Altera o cursor para pointer */
+    text-decoration: none;   /* Remove qualquer sublinhado */
+    outline: none;
+}
+
 /* HEADER */
+
+
 
 .header {
     display: flex;
@@ -106,6 +121,47 @@ main {
 
 }
 
+.main_form_box{
+    width: 40%;
+
+
+}
+.main_form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+}
+
+.main_form_inputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    justify-content: space-evenly;
+}
+
+.main_form_inputs input{
+    width: 100%;
+    height: 4vh;
+    border: none;
+    background-color: #d4d4d462;
+    border-radius: 5px;
+}
+
+.main_form_submit{
+    width: 100%;
+    height: 20%;
+}
+
+.main_form_submit input{
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+    color: var(--color_0);
+    background-color: var(--color_4);   
+
+}
 .main_box {
     margin: 5%;
     display: flex;
@@ -115,31 +171,127 @@ main {
 
 }
 
-.main_table_box{
- height: 100%;
- width: 100%;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: start;
-}
-
-.main_table{
+.main_elements_box {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 5vh;
+    height: 10vh;
+
+}
+
+.main_elements_tittle {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.main_elements_tittle h1{
+    font-size: 3em;
+    color: var(--color_5);
+}
+
+.main_table_thead_th_button_new{
+    height: 2vh;
+
+}
+
+.main_table_button_new{
+    width: 100%;
+    height: 100%;
+    
+
+}
+.main_table_button_new a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    text-decoration: none;
+
+}
+.main_table_button_new a button{
+    
+    width: 90%;
+    height: 100%;
+    color: var(--color_0);
+    background-color: var(--color_4);
+    border-radius: 5px;
+    
+}
+
+.main_table_box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.main_table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1vh;
 
 }
 
 
-.main_table_thead{
+.main_table_thead {
+height: 30px;
+background-color: #8e8c8c32;
 
 }
 
-.main_table_tbody{
+.main_table_tbody {
     text-align: center;
+    
 }
 
-.main_table_tbody_tr{
+.main_table_tbody_tr {
     height: 30px;
+    background-color: #d4d4d462;
+  
 }
+.main_table_edit_button{
+    width: 8%;
+    height: 2vh;    
+   
+
+}
+.main_table_delete_button{
+    width: 8%;
+    height: 2vh;   
+}
+.main_table_edit_button form, .main_table_delete_button form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+}
+.main_table_edit_button form input {
+    width: 80%;
+    height: 100%;
+    color: var(--color_0);
+    background-color: var(--color_4);
+    border-radius: 5px;
+    
+    font-size: 0.8em;
+}
+.main_table_delete_button form input {
+    width: 80%;
+    height: 100%;
+    color: #d00023;
+    background-color: var(--color_4);
+    border-radius: 5px;
+   
+    font-size: 0.8em;
+}
+
 
 footer {}

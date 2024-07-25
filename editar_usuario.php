@@ -22,28 +22,25 @@ require "factory/conexao.php";
 
             $id = $_GET["botao_editar"];
             
-            $select_query = "select * from tbcomercio where cod = '$id'";
+            $select_query = "select * from tbusuario where cod = '$id'";
             $select = mysqli_query($conexao_banco, $select_query);
             if ($select->num_rows > 0) {
                 $select_result = $select->fetch_assoc();
             }
             ?>
 
-            <form action="editar_comercio_processo.php" method="POST">
+            <form action="editar_usuario_processo.php" method="POST">
 
 
                 <input type="hidden" name="id_editar" value="<?php echo $select_result["cod"]; ?>">
-                <label for="contato">Contato</label>
-                <input type="text" name="contato" class="input_nome" placeholder="<?php echo $select_result["contato"]; ?>">
-                <label for="contato">Empresa</label>
-                <input type="text" name="empresa" class="input_email"
-                    placeholder="<?php echo $select_result["empresa"]; ?>">
-                <label for="contato">Telefone</label>
-                <input type="text" name="telefone" class="input_data_nascimento"
-                    placeholder="<?php echo $select_result["tel"]; ?>">
-                <label for="email">Telefone</label>
-                <input type="text" name="email" class="input_telefone"
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" class="input_nome" placeholder="<?php echo $select_result["nome"]; ?>">
+                <label for="contato">Email</label>
+                <input type="text" name="email" class="input_email"
                     placeholder="<?php echo $select_result["email"]; ?>">
+                <label for="contato">Senha</label>
+                <input type="password" name="senha" class="input_data_nascimento"
+                    placeholder="<?php echo $select_result["senha"]; ?>">
                 <input type="submit" value="Editar">
             </form>
         </section>

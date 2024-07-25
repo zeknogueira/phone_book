@@ -76,6 +76,22 @@
                                 <td>
                                     <?php echo $select_result["senha"]; ?>
                                 </td>
+                                <td>
+                                        <form action="editar_usuario.php" method="GET">
+                                            <input type="hidden" name="botao_editar"
+                                                value="<?php echo $select_result["cod"]; ?>">
+                                            <input type="submit" name="botao_editar_enviar" value="EDITAR"
+                                                class="main_table_button" class="main_table_tbody_edit_button">
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form action="excluir_usuario_processo.php" method="POST">
+                                            <input type="hidden" name="id_botao_deletar"
+                                                value="<?php echo $select_result["cod"]; ?>">
+                                            <input type="submit" name="botao_deletar" value="EXCLUIR" class="main_table_button"
+                                                class="main_table_tbody_delete_button">
+                                        </form>
+                                    </td>
                             </tr>
                         <?php }
                     }
