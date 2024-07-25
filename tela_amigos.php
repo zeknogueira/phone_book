@@ -98,7 +98,7 @@
                         } else {
 
 
-                            $sql_query = "select * from tbamigos";
+                            $sql_query = "select cod, nome, email, DATE_FORMAT(datanasc, '%d-%m-%Y') as data_formatada, tel from tbamigos;";
                             $select = $conexao_banco->query($sql_query);
                             if ($select->num_rows > 0) {
 
@@ -115,7 +115,7 @@
                                             <?php echo $select_result["email"]; ?>
                                         </td>
                                         <td>
-                                            <?php echo $select_result["datanasc"]; ?>
+                                            <?php echo $select_result["data_formatada"]; ?>
                                         </td>
                                         <td>
                                             <?php echo $select_result["tel"]; ?>
