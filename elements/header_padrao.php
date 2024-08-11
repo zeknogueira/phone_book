@@ -25,6 +25,13 @@
 
             </nav>
         </div>
+
         <?php include "elements/footer_padrao.php" ?>
+    </div>
+    <div>
+        <p><?php echo $_SESSION['nome'];?></p>
+        <form action="logout.php" method>
+            <input type="submit" value="Logout">
+        </form>
     </div>
 </header>

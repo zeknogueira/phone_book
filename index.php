@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['nome'])) {
+    header("Location: login.php");
+} else {
+
+    ?>
 <!DOCTYPE html>
 <!--<?php // header("Location: tela_amigos.php"); ?>-->
 <html lang="pt-br">
@@ -42,3 +49,4 @@
 </body>
 
 </html>
+<?php } ?>
